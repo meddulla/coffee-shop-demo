@@ -1,0 +1,29 @@
+.input {
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	padding: 10px 12px;
+	font-size: 14px;
+	font-family: inherit;
+	color: var(--ink);
+	width: 100%;
+	transition:
+		border-color 120ms ease,
+		box-shadow 120ms ease;
+}
+.input:focus {
+	outline: none;
+	border-color: var(--accent);
+	box-shadow: 0 0 0 3px rgba(139, 90, 43, 0.15);
+}
+.textarea {
+	min-height: 96px;
+	resize: vertical;
+}
+.select {
+	appearance: none;
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path fill='%236b5646' d='M0 0l6 8 6-8z'/></svg>");
+	background-repeat: no-repeat;
+	background-position: right 12px center;
+	padding-right: 32px;
+}

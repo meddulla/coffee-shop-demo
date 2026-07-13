@@ -1,0 +1,16 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "coffee-shop",
+	"account_id": "aa3830c1e0c99243c03db44e846f576e",
+	"main": "src/worker/index.ts",
+	"compatibility_date": "2026-07-01",
+	"compatibility_flags": ["nodejs_compat"],
+	"assets": {
+		"directory": "./dist",
+		"binding": "ASSETS",
+		"not_found_handling": "single-page-application",
+	},
+	"observability": {
+		"enabled": true,
+	},
+}
